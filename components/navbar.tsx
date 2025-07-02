@@ -10,6 +10,7 @@ import {
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 
@@ -23,8 +24,16 @@ export const Navbar = () => {
       {/* LOGO à esquerda */}
       <NavbarContent justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold text-inherit">ACME</p>
+          <NextLink
+            className="flex justify-start items-center gap-1 pt-4"
+            href="/"
+          >
+            <Image
+              alt="Logo do site"
+              height={80}
+              src={"/logo-cake.png"}
+              width={80}
+            />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -35,7 +44,7 @@ export const Navbar = () => {
           <NavbarItem key={item.href}>
             <NextLink
               className={clsx(
-                "transition-colors duration-300 ease-in-out data-[active=true]:text-primary data-[active=true]:font-medium hover:text-[#C79F30]",
+                "ml-4 transition-colors duration-300 ease-in-out data-[active=true]:text-primary data-[active=true]:font-medium hover:text-[#C79F30]",
               )}
               href={item.href}
             >
