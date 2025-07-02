@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { HeroUIProvider } from "@heroui/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useRouter } from "next/router";
-import { Inter, Cardo } from "next/font/google";
+import { Inter, Cardo, Pattaya } from "next/font/google";
 
 import { fontSans, fontMono } from "@/config/fonts";
 export const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -12,6 +12,13 @@ export const cardo = Cardo({
   variable: "--font-cardo",
   weight: "400",
 });
+
+export const pattaya = Pattaya({
+  subsets: ["latin"],
+  variable: "--font-pattaya",
+  weight: "400",
+});
+
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {

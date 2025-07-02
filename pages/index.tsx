@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
+import { pattaya } from "./_app";
 
 export default function IndexPage() {
   return (
@@ -16,10 +17,8 @@ export default function IndexPage() {
           <span className={title()}>Make&nbsp;</span>
           <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
           <br />
-          <span className={title()}>
-            websites regardless of your design experience.
-          </span>
-          <div className={subtitle({ class: "mt-4" })}>
+          <span style={{}}>websites regardless of your design experience.</span>
+          <div className={`${pattaya.className} text-5xl`}>
             Beautiful, fast and modern React UI library.
           </div>
         </div>
