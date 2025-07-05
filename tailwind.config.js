@@ -1,4 +1,4 @@
-import {heroui} from "@heroui/theme"
+import { heroui } from "@heroui/theme"
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -13,6 +13,9 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        inter: ['Inter', 'sans-serif'],
+        cardo: ['Cardo', 'serif'],
+        pattaya: ['Pattaya', 'cursive'],
       },
     },
   },

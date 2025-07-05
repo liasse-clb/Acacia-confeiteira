@@ -30,9 +30,9 @@ export const Navbar = () => {
           >
             <Image
               alt="Logo do site"
-              height={80}
+              height={70}
               src={"/logo-cake.png"}
-              width={80}
+              width={70}
             />
           </NextLink>
         </NavbarBrand>

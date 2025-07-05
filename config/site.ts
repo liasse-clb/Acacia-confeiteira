@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Nossos Bolos",
-      href: "/docs",
+      href: "/bolos",
     },
     {
       label: "Pedir",
