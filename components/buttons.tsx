@@ -9,7 +9,7 @@ import { pattaya } from "@/pages/_app";
 export default function FazerPedido() {
   return (
     <div>
-      <Button asChild className="bg-[#C79F30] flex flex-row text-1xl m-auto">
+      <Button className="bg-[#C79F30] flex flex-row text-1xl m-auto">
         <a
           href={siteConfig.links.whatsapp}
           rel="noopener noreferrer"
