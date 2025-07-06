@@ -58,8 +58,8 @@ export const ArrowIcon: React.FC<IconSvgProps> = ({
       {...props}
     >
       <path
-        fill="#fff"
         d="M14.59 7.41L16 6l6 6-6 6-1.41-1.41L18.17 13H2v-2h16.17z"
+        fill="#fff"
       />
     </svg>
   );
