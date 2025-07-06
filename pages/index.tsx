@@ -10,11 +10,11 @@ import Cards from "@/components/cards";
 
 export default function IndexPage() {
   const images = [
-    "/slide1.png",
-    "/slide2.png",
-    "/slide3.png",
-    "/slide4.png",
-    "/slide5.png",
+    "/slide1.webp",
+    "/slide2.webp",
+    "/slide3.webp",
+    "/slide4.webp",
+    "/slide5.webp",
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function IndexPage() {
             alt="Hero section, imagem principal"
             className="w-120 sm:w-72 md:w-[500px] h-auto"
             height={600}
-            src="/bolo-central.png"
+            src="/bolo-central.webp"
             width={600}
           />
         </div>
