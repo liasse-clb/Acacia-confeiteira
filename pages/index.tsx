@@ -7,6 +7,7 @@ import DefaultLayout from "@/layouts/default";
 import FazerPedido from "@/components/buttons";
 import { VerCard } from "@/components/buttons";
 import Cards from "@/components/cards";
+import Cakes from "@/components/cakes";
 
 export default function IndexPage() {
   const images = [
@@ -92,12 +93,8 @@ export default function IndexPage() {
           <Cards />
         </div>
       </section>
-      <section className="w-full px-4 py-10">
-        <p
-          className={`${pattaya.className} text-[clamp(1.8rem,7vw,3.5rem)] text-[#C79f30] mb-4 leading-none text-center`}
-        >
-          Conheça nossos bolos
-        </p>
+      <section className="w-full px-4 py-10 m-auto">
+        <Cakes />
       </section>
     </DefaultLayout>
   );

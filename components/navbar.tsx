@@ -59,8 +59,8 @@ export const Navbar = () => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+      <NavbarMenu className="bg-[#1a1a2e62]">
+        <div className="mx-4 mt-2 flex flex-col gap-2 text-white">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link className="text-white" href="#" size="lg">

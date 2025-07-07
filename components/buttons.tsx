@@ -8,14 +8,18 @@ import { pattaya } from "@/pages/_app";
 export default function FazerPedido() {
   return (
     <div>
-      <Button className="bg-[#C79F30] flex items-center gap-2 text-xl m-auto px-4 py-2 text-white">
-        <a
-          href={siteConfig.links.whatsapp}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Fazer um pedido <ArrowIcon />
-        </a>
+      <Button
+        className="bg-[#C79F30] flex items-center gap-2 text-xl m-auto px-4 py-2 text-white"
+        onClick={() =>
+          window.open(
+            siteConfig.links.whatsapp,
+            "_blank",
+            "noopener,noreferrer",
+          )
+        }
+      >
+        Fazer pedido
+        <ArrowIcon />
       </Button>
     </div>
   );
@@ -27,8 +31,9 @@ export function VerCard() {
       <Button
         className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4`}
         variant="bordered"
+        onClick={() => (window.location.href = "/bolos")}
       >
-        <a href="/bolos">Ver Cardápio Completo</a>
+        Ver Cardápio Completo
       </Button>
     </div>
   );
