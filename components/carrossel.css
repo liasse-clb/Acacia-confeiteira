@@ -1,0 +1,27 @@
+.carrossel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrossel-slide {
+  display: flex;
+  width: fit-content;
+  animation: marquee 30s linear infinite;
+}
+
+.carrossel-img {
+  max-width: 14rem; 
+  max-height: 16rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

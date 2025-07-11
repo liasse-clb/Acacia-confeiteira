@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSwipeable } from "react-swipeable";
 
 interface CarouselProps {
   images: string[];
@@ -10,6 +11,17 @@ interface CarouselProps {
 
 export default function Carousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 8000);
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -18,6 +30,12 @@ export default function Carousel({ images }: CarouselProps) {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    trackMouse: true,
+  });
 
   return (
     <div className="relative flex flex-col items-center gap-4 sm:gap-6 w-full max-w-[360px] mx-auto">
@@ -45,7 +63,10 @@ export default function Carousel({ images }: CarouselProps) {
         </button>
 
         {/* Slide principal */}
-        <div className="aspect-square w-full rounded-full overflow-hidden bg-[#FFAC04] flex items-center justify-center shadow-lg relative">
+        <div
+          {...handlers}
+          className="aspect-square w-full max-w-[350px] rounded-2xl overflow-hidden bg-[#FFAC04] flex items-center justify-center shadow-lg relative"
+        >
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -57,9 +78,8 @@ export default function Carousel({ images }: CarouselProps) {
             >
               <Image
                 fill
-                unoptimized
                 alt={`Slide ${currentIndex + 1}`}
-                className="object-cover rounded-full"
+                className="object-contain"
                 src={images[currentIndex]}
               />
             </motion.div>

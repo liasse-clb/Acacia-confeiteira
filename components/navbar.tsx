@@ -17,17 +17,14 @@ import { siteConfig } from "@/config/site";
 export const Navbar = () => {
   return (
     <HeroUINavbar
-      className="bg-[#1A1A2E] text-white font-bold"
+      className="bg-[#1A1A2E] text-white font-bold p-1"
       maxWidth="xl"
       position="sticky"
     >
       {/* LOGO à esquerda */}
       <NavbarContent justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
-          <NextLink
-            className="flex justify-start items-center gap-1 pt-4"
-            href="/"
-          >
+          <NextLink className="flex justify-start items-center gap-1" href="/">
             <Image
               alt="Logo do site"
               height={70}

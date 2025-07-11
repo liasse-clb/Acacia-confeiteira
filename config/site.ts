@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Acácia Confeiteira",
+  description:
+    "Aqui eu tranformo a experiência do sabor em arte em forma de bolo!",
   navItems: [
     {
       label: "Inicio",
@@ -48,11 +49,11 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
     whatsapp: "https://wa.link/9oact3",
     whatsapp2: "https://wa.link/8a525g",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    whatsapp3: "https://wa.link/com473",
+    whatsapp4: "https://wa.link/osk5lf",
+    instagram:
+      "https://www.instagram.com/acaciacakedesigner?igsh=OGwzN2xlN3c1M290",
   },
 };

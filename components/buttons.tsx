@@ -38,3 +38,38 @@ export function VerCard() {
     </div>
   );
 }
+
+export function VerCard2() {
+  return (
+    <div>
+      <Button
+        className={`${pattaya.className} bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white`}
+        variant="shadow"
+        onClick={() => (window.location.href = "/bolos")}
+      >
+        Veja o Cardápio Completo
+      </Button>
+    </div>
+  );
+}
+
+export function Pedir() {
+  return (
+    <div>
+      <Button
+        className={`${pattaya.className} bg-[#C79F30] flex items-center m-auto text-xl p-4 text-white`}
+        onClick={() =>
+          window.open(
+            siteConfig.links.whatsapp,
+            "_blank",
+            "noopener,noreferrer",
+          )
+        }
+      >
+        Pedir 
+        <ArrowIcon />
+      </Button>
+    </div>
+  );
+}
+

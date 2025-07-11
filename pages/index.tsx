@@ -4,10 +4,14 @@ import { cardo, inter, pattaya } from "./_app";
 
 import Carousel from "@/components/carousel";
 import DefaultLayout from "@/layouts/default";
-import FazerPedido from "@/components/buttons";
+import FazerPedido, { Pedir } from "@/components/buttons";
 import { VerCard } from "@/components/buttons";
 import Cards from "@/components/cards";
 import Cakes from "@/components/cakes";
+import TestimonialList from "@/components/TestimonialList";
+import InstagramButton, { WhatsAppButton } from "@/components/socialBtn";
+import Carrossel from "@/components/pedir";
+import Ebook from "@/components/ebook";
 
 export default function IndexPage() {
   const images = [
@@ -16,6 +20,39 @@ export default function IndexPage() {
     "/slide3.webp",
     "/slide4.webp",
     "/slide5.webp",
+    "/slide6.webp",
+    "/slide7.webp",
+  ];
+
+  const testimonials = [
+    {
+      comment:
+        "Já sou cliente de carteirinha rsrs, você tem mão cheia no que faz parabéns!!",
+      name: "Pedro Inácio",
+    },
+    {
+      comment:
+        "Simplesmente o melhor bolo que já comi na vida! Macio, delicioso e super bem decorado.",
+      name: "Juliana Oliveira",
+    },
+    {
+      comment:
+        "As coxinhas e bolo ficaram ótimos no aniersário da minha filha, você arrassa!!",
+      name: "Gabriela Aquino",
+    },
+    {
+      comment: "Sabor incrível e nada enjoativo. Todo mundo elogiou!",
+      name: "Larissa Carvalho",
+    },
+    {
+      comment: "Quando vi o bolo, achei que era uma obra de arte.",
+      name: "Vinicius Dantes",
+    },
+    {
+      comment:
+        "Chegou pontualmente e em perfeitas condições. Super profissional",
+      name: "Karmen Leite",
+    },
   ];
 
   return (
@@ -42,6 +79,10 @@ export default function IndexPage() {
             </span>
             <div className="pt-2">
               <FazerPedido />
+            </div>
+            <div className="flex flex-row gap-3">
+              <InstagramButton />
+              <WhatsAppButton />
             </div>
           </div>
         </div>
@@ -95,6 +136,30 @@ export default function IndexPage() {
       </section>
       <section className="w-full px-4 py-10 m-auto">
         <Cakes />
+      </section>
+      <section className="w-full px-4 py-10 m-auto justify-center flex flex-col">
+        <div>
+          <p
+            className={`${pattaya.className} text-[clamp(2.2rem,5vw,3rem)] text-center text-[#C79f30] mb-4 leading-none`}
+          >
+            Veja os nossos relatos!
+          </p>
+        </div>
+        <div className="flex flex-row gap-8 flex-wrap justify-center">
+          <TestimonialList testimonials={testimonials} />
+        </div>
+      </section>
+      <section className="w-full px-4 py-10 gap-6 m-auto justify-center flex flex-col">
+        <Carrossel />
+        <p
+          className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
+        >
+          Fale Conosco Para Um Orçamento Personalizado!
+        </p>
+        <Pedir />
+      </section>
+      <section className="w-full px-4 py-10 m-auto">
+        <Ebook />
       </section>
     </DefaultLayout>
   );
