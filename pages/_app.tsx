@@ -4,6 +4,7 @@ import { HeroUIProvider } from "@heroui/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { Inter, Cardo, Pattaya } from "next/font/google";
+import "../styles/carrossel.css";
 
 import { fontSans, fontMono } from "@/config/fonts";
 export const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });

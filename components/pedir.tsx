@@ -1,5 +1,4 @@
 import React from "react";
-import "./carrossel.css";
 
 const imagens = [
   "/cake1.webp",

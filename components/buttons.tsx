@@ -66,7 +66,7 @@ export function Pedir() {
           )
         }
       >
-        Pedir
+        Pedir Orçamento
         <ArrowIcon />
       </Button>
     </div>
