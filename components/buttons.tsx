@@ -72,3 +72,24 @@ export function Pedir() {
     </div>
   );
 }
+
+export function CakePage() {
+  return (
+    <div className="m-auto">
+      <Button
+        className={`${pattaya.className} text-white w-52 p-6 text-2xl`}
+        color="primary"
+        variant="shadow"
+        onClick={() =>
+          window.open(
+            siteConfig.links.whatsapp,
+            "_blank",
+            "noopener,noreferrer",
+          )
+        }
+      >
+        Saiba Mais
+      </Button>
+    </div>
+  );
+}

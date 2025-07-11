@@ -137,7 +137,7 @@ export default function IndexPage() {
       <section className="w-full px-4 py-10 m-auto">
         <Cakes />
       </section>
-      <section className="w-full px-4 py-10 m-auto justify-center flex flex-col">
+      <section className="w-full px-4 py-10 m-auto justify-center flex flex-row flex-wrap">
         <div>
           <p
             className={`${pattaya.className} text-[clamp(2.2rem,5vw,3rem)] text-center text-[#C79f30] mb-4 leading-none`}
@@ -149,7 +149,7 @@ export default function IndexPage() {
           <TestimonialList testimonials={testimonials} />
         </div>
       </section>
-      <section className="w-full px-4 py-10 gap-6 m-auto justify-center flex flex-col">
+      <section className="w-full px-4 py-3 gap-6 m-auto justify-center flex flex-col">
         <Carrossel />
         <p
           className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
