@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Button } from "@heroui/button";
 
+import { VerCard2 } from "./buttons";
+
 import { siteConfig } from "@/config/site";
 import { pattaya } from "@/pages/_app";
-import { VerCard, VerCard2 } from "./buttons";
 
 export default function Cakes() {
   return (

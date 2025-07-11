@@ -19,7 +19,7 @@ export default function TestimonialCard({ name, comment }: TestimonialProps) {
           <BsStarFill key={i} />
         ))}
       </div>
-      <p className="text-gray-700 italic">"{comment}"</p>
+      <p className="text-gray-700 italic">&quot;{comment}&quot;</p>
     </div>
   );
 }

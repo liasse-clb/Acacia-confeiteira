@@ -1,8 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
-import { siteConfig, SiteConfig } from "@/config/site";
+import { siteConfig } from "@/config/site";
 
 export default function InstagramButton() {
   return (

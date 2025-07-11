@@ -66,10 +66,9 @@ export function Pedir() {
           )
         }
       >
-        Pedir 
+        Pedir
         <ArrowIcon />
       </Button>
     </div>
   );
 }
-
