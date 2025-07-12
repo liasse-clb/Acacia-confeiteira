@@ -24,7 +24,7 @@ export default function Cakes() {
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
           <p
             className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
           >
@@ -44,7 +44,7 @@ export default function Cakes() {
             e ocasiões que pedem um toque de leveza e sofisticação.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0`}
             variant="bordered"
             onClick={() =>
               window.open(
@@ -67,7 +67,7 @@ export default function Cakes() {
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
           <p
             className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
           >
@@ -88,7 +88,7 @@ export default function Cakes() {
             trazem um frescor campestre.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0`}
             variant="bordered"
             onClick={() =>
               window.open(
@@ -111,7 +111,7 @@ export default function Cakes() {
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
           <p
             className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
           >
@@ -131,7 +131,7 @@ export default function Cakes() {
             laterais e o topo, criando um cenário de pura beleza.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0`}
             variant="bordered"
             onClick={() =>
               window.open(

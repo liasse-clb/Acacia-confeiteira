@@ -15,7 +15,7 @@ export default function Ebook() {
         width={860}
       />
 
-      <div className="flex flex-col gap-4 lg:text-start max-w-2xl">
+      <div className="flex flex-col gap-4 lg:text-start max-w-2xl text-center md:text-left">
         <p
           className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
         >
