@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import clsx from "clsx";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { fontSans } from "@/config/fonts";
 
@@ -16,7 +15,6 @@ export default function Document() {
         style={{ backgroundColor: "#1A1A2E" }}
       >
         <Main />
-        <SpeedInsights />
         <NextScript />
       </body>
     </Html>
