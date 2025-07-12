@@ -15,13 +15,13 @@ import Ebook from "@/components/ebook";
 
 export default function IndexPage() {
   const images = [
-    "/slide1.webp",
-    "/slide2.webp",
-    "/slide3.webp",
-    "/slide4.webp",
-    "/slide5.webp",
-    "/slide6.webp",
-    "/slide7.webp",
+    "/images/slide1.webp",
+    "/images/slide2.webp",
+    "/images/slide3.webp",
+    "/images/slide4.webp",
+    "/images/slide5.webp",
+    "/images/slide6.webp",
+    "/images/slide7.webp",
   ];
 
   const testimonials = [
@@ -93,7 +93,7 @@ export default function IndexPage() {
             alt="Hero section, imagem principal"
             className="w-120 sm:w-72 md:w-[500px] h-auto"
             height={600}
-            src="/bolo-central.webp"
+            src="/images/bolo-central.webp"
             width={600}
           />
         </div>

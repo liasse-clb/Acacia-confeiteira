@@ -28,7 +28,7 @@ export const Navbar = () => {
             <Image
               alt="Logo do site"
               height={70}
-              src={"/logo-cake.webp"}
+              src={"/images/logo-cake.webp"}
               width={70}
             />
           </NextLink>

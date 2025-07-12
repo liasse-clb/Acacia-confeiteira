@@ -1,11 +1,11 @@
 import React from "react";
 
 const imagens = [
-  "/cake1.webp",
-  "/cake2.webp",
-  "/cake3.webp",
-  "/cake4.webp",
-  "/cake5.webp",
+  "/images/cake1.webp",
+  "/images/cake2.webp",
+  "/images/cake3.webp",
+  "/images/cake4.webp",
+  "/images/cake5.webp",
 ];
 
 export default function Carrossel() {

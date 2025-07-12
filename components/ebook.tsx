@@ -11,7 +11,7 @@ export default function Ebook() {
         alt="Imagem ilustrativa de um ebook"
         className="w-full max-w-[400px] sm:max-w-[460px] lg:max-w-[500px] object-cover"
         height={80}
-        src="/ebook.webp"
+        src="/images/ebook.webp"
         width={860}
       />
 

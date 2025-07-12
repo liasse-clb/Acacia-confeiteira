@@ -20,7 +20,7 @@ export default function Cakes() {
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake1.webp"
+            src="/images/cake1.webp"
             width={400}
           />
         </div>
@@ -63,7 +63,7 @@ export default function Cakes() {
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake2.webp"
+            src="/images/cake2.webp"
             width={400}
           />
         </div>
@@ -107,7 +107,7 @@ export default function Cakes() {
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake3.webp"
+            src="/images/cake3.webp"
             width={400}
           />
         </div>

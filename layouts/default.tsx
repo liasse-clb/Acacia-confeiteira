@@ -5,7 +5,6 @@ import { Head } from "./head";
 
 import InstagramButton, { WhatsAppButton } from "@/components/socialBtn";
 import { Navbar } from "@/components/navbar";
-import { pattaya } from "@/pages/_app";
 
 export default function DefaultLayout({
   children,
@@ -25,7 +24,7 @@ export default function DefaultLayout({
             <Image
               alt="Logo do site"
               height={70}
-              src={"/logo-cake.webp"}
+              src={"/images/logo-cake.webp"}
               width={150}
             />
           </div>
