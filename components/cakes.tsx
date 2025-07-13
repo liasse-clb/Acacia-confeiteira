@@ -152,7 +152,9 @@ export default function Cakes() {
         </div>
       </div>
       <div className="justify-items-center">
-        <p className=" text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mt-12 mb-6">
+        <p
+          className={`${inter.className} text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mt-12 mb-6`}
+        >
           Quer mais opções? Ou algo personalizado ? <br /> Descubra a nossa
           coleção completa de bolos e doces no cardápio!{" "}
         </p>

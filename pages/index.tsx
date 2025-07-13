@@ -145,7 +145,8 @@ export default function IndexPage() {
             Veja os nossos relatos!
           </p>
         </div>
-        <div className="flex flex-row gap-8 flex-wrap justify-center">
+        <br />
+        <div className="flex gap-8 flex-wrap justify-center">
           <TestimonialList testimonials={testimonials} />
         </div>
       </section>

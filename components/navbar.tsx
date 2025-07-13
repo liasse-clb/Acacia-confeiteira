@@ -13,6 +13,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
+import { inter } from "@/pages/_app";
 
 export const Navbar = () => {
   return (
@@ -36,7 +37,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       {/* LINKS à direita */}
-      <NavbarContent className="hidden lg:flex" justify="end">
+      <NavbarContent className="hidden lg:flex font-inter" justify="end">
         {siteConfig.navItems.map((item) => (
           <NavbarItem key={item.href}>
             <NextLink
@@ -60,7 +61,11 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2 text-white">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="text-white" href="#" size="lg">
+              <Link
+                className={`${inter.className} text-white`}
+                href="#"
+                size="lg"
+              >
                 {item.label}
               </Link>
             </NavbarMenuItem>
