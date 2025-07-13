@@ -4,7 +4,7 @@ import { Button } from "@heroui/button";
 import { VerCard2 } from "./buttons";
 
 import { siteConfig } from "@/config/site";
-import { pattaya } from "@/pages/_app";
+import { inter, pattaya } from "@/pages/_app";
 
 export default function Cakes() {
   return (
@@ -30,7 +30,9 @@ export default function Cakes() {
           >
             Jardim Festivo
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p
+            className={`${inter.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white`}
+          >
             Delicadeza e sabor se unem em nosso{" "}
             <span
               className={`${pattaya.className} text-[#4867FF] text-lg sm:text-xl md:text-2xl`}
@@ -73,7 +75,9 @@ export default function Cakes() {
           >
             Céu Gradiente
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p
+            className={`${inter.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white`}
+          >
             Deixe-se encantar pela beleza artística do nosso{" "}
             <span
               className={`${pattaya.className} text-[#62BEFF] text-lg sm:text-xl md:text-2xl`}
@@ -117,7 +121,9 @@ export default function Cakes() {
           >
             Sonho Rosa
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p
+            className={`${inter.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white`}
+          >
             Celebre com o charme e a alegria do{" "}
             <span
               className={`${pattaya.className} text-[#F28686] text-lg sm:text-xl md:text-2xl`}
