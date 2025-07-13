@@ -38,7 +38,7 @@ export default function DefaultLayout({
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contato</h3>
             <p className="text-sm flex gap-2">
-              <FaMailBulk /> contato@seudominio.com
+              <FaMailBulk /> acaciacakedesigner@gmail.com
             </p>
             <p className="text-sm flex gap-2">
               <FaPhone /> (71) 99267-4314

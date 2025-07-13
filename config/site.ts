@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Acácia Confeiteira",
   description:
-    "Aqui eu tranformo a experiência do sabor em arte em forma de bolo!",
+    "Confeitaria artesanal em São Paulo com bolos personalizados, doces finos e delivery rápido. Surpreenda em festas, casamentos e eventos. Encomende online!",
   navItems: [
     {
       label: "Inicio",

@@ -15,6 +15,9 @@ export const Head = () => {
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport"
       />
+      <meta content="index, follow" name="robots" />
+      <link href="https://acacia-confeiteira.vercel.app/" rel="canonical" />
+      <meta content="website" property="og:type" />
       <link href="/favicon.ico" rel="icon" />
     </NextHead>
   );
