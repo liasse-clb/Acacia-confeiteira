@@ -9,7 +9,7 @@ export default function FazerPedido() {
   return (
     <div>
       <Button
-        className="bg-[#C79F30] flex items-center gap-2 text-xl m-auto px-4 py-2 text-white"
+        className="bg-[#C79F30] flex items-center gap-2 text-xl font-inter m-auto md:m-0 px-4 py-2 text-white"
         onClick={() =>
           window.open(
             siteConfig.links.whatsapp,

@@ -33,7 +33,7 @@ export default function TestimonialList({
 
       {testimonials.length > 3 && (
         <Button
-          className="mt-4 text-[#C79f30] underline font-medium hover:text-[#FFAC04] transition"
+          className="mt-4 text-[#C79f30] underline bg-slate-700 font-inter font-medium hover:text-[#FFAC04] transition"
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? "Ver menos" : "Ver mais"}

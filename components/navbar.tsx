@@ -11,7 +11,11 @@ import { Link } from "@heroui/link";
 import NextLink from "next/link";
 import clsx from "clsx";
 import Image from "next/image";
+import { Button } from "@heroui/button";
 
+import InstagramButton, { WhatsAppButton } from "./socialBtn";
+
+import { pattaya } from "@/pages/_app";
 import { siteConfig } from "@/config/site";
 import { inter } from "@/pages/_app";
 
@@ -36,7 +40,6 @@ export const Navbar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      {/* LINKS à direita */}
       <NavbarContent className="hidden lg:flex font-inter" justify="end">
         {siteConfig.navItems.map((item) => (
           <NavbarItem key={item.href}>
@@ -52,7 +55,6 @@ export const Navbar = () => {
         ))}
       </NavbarContent>
 
-      {/* TOGGLE MOBILE */}
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <NavbarMenuToggle />
       </NavbarContent>
@@ -70,6 +72,19 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+        </div>
+        <div className="flex flex-row justify-center mt-3 gap-4 font-inter">
+          <WhatsAppButton />
+          <InstagramButton />
+        </div>
+        <div>
+          <Button
+            className={`${pattaya.className} fixed bottom-0 left-0 w-full bg-slate-800 border-none text-1xl p-4`}
+            variant="bordered"
+            onClick={() => (window.location.href = "/auth/login")}
+          >
+            {" "}
+          </Button>
         </div>
       </NavbarMenu>
     </HeroUINavbar>

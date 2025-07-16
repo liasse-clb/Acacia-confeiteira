@@ -5,6 +5,7 @@ import { Head } from "./head";
 
 import InstagramButton, { WhatsAppButton } from "@/components/socialBtn";
 import { Navbar } from "@/components/navbar";
+import { inter } from "@/pages/_app";
 
 export default function DefaultLayout({
   children,
@@ -18,7 +19,9 @@ export default function DefaultLayout({
       <main className="w-full flex-grow pt-16 px-6 bg-[#1A1A2E]">
         {children}
       </main>
-      <footer className="bg-[#0D1117] text-gray-300 px-6 py-10 mt-auto">
+      <footer
+        className={`${inter.className} bg-[#0D1117] text-gray-300 px-6 py-10 mt-auto `}
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="m-auto">
             <Image

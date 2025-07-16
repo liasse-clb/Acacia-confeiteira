@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FaMotorcycle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import { cardo, inter, pattaya } from "./_app";
 
@@ -15,13 +17,16 @@ import Ebook from "@/components/ebook";
 
 export default function IndexPage() {
   const images = [
-    "/images/slide1.webp",
-    "/images/slide2.webp",
-    "/images/slide3.webp",
-    "/images/slide4.webp",
-    "/images/slide5.webp",
-    "/images/slide6.webp",
-    "/images/slide7.webp",
+    "/images/cake1.webp",
+    "/images/cake2.webp",
+    "/images/cake3.webp",
+    "/images/cake4.webp",
+    "/images/cake5.webp",
+    "/images/cake6.webp",
+    "/images/cake7.webp",
+    "/images/cake8.webp",
+    "/images/cake9.webp",
+    "/images/cake10.webp",
   ];
 
   const testimonials = [
@@ -37,7 +42,7 @@ export default function IndexPage() {
     },
     {
       comment:
-        "As coxinhas e bolo ficaram ótimos no aniersário da minha filha, você arrassa!!",
+        "As coxinhas e bolo ficaram ótimos no aniversário da minha filha, você arrassa!!",
       name: "Gabriela Aquino",
     },
     {
@@ -58,37 +63,55 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 px-4">
+      <section className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-20 py-3 md:py-6 px-4">
         {/* Texto e botão */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="flex flex-col items-start text-left space-y-4 max-w-md">
+        <motion.div
+          animate={{ opacity: 1, x: 0 }}
+          className="w-full md:w-1/2 flex justify-center md:text-left text-center"
+          initial={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="flex flex-col text-left space-y-4 max-w-md">
             <span
-              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-white leading-tight -mb-12`}
+              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-white leading-tight -mb-12`}
             >
               Acácia&apos;S
             </span>
             <span
-              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-[#FFAC04] leading-tight`}
+              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-[#FFAC04] leading-tight`}
             >
-              Bakery
+              Bakery{" "}
             </span>
             <span
-              className={`${cardo.className} text-[clamp(1rem,2.5vw,1.5rem)] text-white italic leading-tight`}
+              className={`${cardo.className} text-[clamp(1rem,2.5vw,1.5rem)] text-center md:text-left text-white italic leading-tight`}
             >
-              “Onde a arte da confeitaria <br /> encontra o requinte do sabor.”
+              “Onde a arte da confeitaria
+              <br />
+              encontra o requinte do sabor.”
             </span>
-            <div className="pt-2">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-white">
+              <FaMotorcycle className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#FFAC04]" />
+              <span className="text-sm md:text-base font-inter">
+                Entregas para Salvador e região
+              </span>
+            </div>
+            <div className="pt-1 md:m-0 m-auto">
               <FazerPedido />
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row gap-3 md:m-0 m-auto">
               <InstagramButton />
               <WhatsAppButton />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Imagem */}
-        <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+        <motion.div
+          animate={{ opacity: 1, x: 0 }}
+          className="w-full md:w-1/2 flex justify-center mb-0 md:mb-6"
+          initial={{ opacity: 0, x: 50 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        >
           <Image
             alt="Hero section, imagem principal"
             className="w-120 sm:w-72 md:w-[500px] h-auto"
@@ -96,10 +119,9 @@ export default function IndexPage() {
             src="/images/bolo-central.webp"
             width={600}
           />
-        </div>
+        </motion.div>
       </section>
 
-      {/* Carrossel + Texto */}
       <section className="w-full bg-[#1A1A2E] px-4 py-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 lg:gap-24 max-w-7xl mx-auto">
           <div className="flex justify-center w-full md:w-1/2">
@@ -137,6 +159,15 @@ export default function IndexPage() {
       <section className="w-full px-4 py-10 m-auto">
         <Cakes />
       </section>
+      <section className="w-full px-4 py-3 gap-6 m-auto justify-center flex flex-col">
+        <Carrossel />
+        <p
+          className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
+        >
+          Fale Conosco Para Um Orçamento Personalizado!
+        </p>
+        <Pedir />
+      </section>
       <section className="w-full px-4 py-10 m-auto justify-center flex flex-col flex-wrap">
         <div>
           <p
@@ -149,15 +180,6 @@ export default function IndexPage() {
         <div className="flex gap-8 flex-wrap justify-center">
           <TestimonialList testimonials={testimonials} />
         </div>
-      </section>
-      <section className="w-full px-4 py-3 gap-6 m-auto justify-center flex flex-col">
-        <Carrossel />
-        <p
-          className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
-        >
-          Fale Conosco Para Um Orçamento Personalizado!
-        </p>
-        <Pedir />
       </section>
       <section className="w-full px-4 py-10 m-auto">
         <Ebook />

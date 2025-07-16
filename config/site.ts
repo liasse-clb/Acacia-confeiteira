@@ -15,11 +15,11 @@ export const siteConfig = {
     },
     {
       label: "Pedir",
-      href: "/pricing",
+      href: "/https://wa.link/9oact3",
     },
     {
       label: "Contato",
-      href: "/blog",
+      href: "/contact",
     },
     {
       label: "Sobre",
@@ -37,11 +37,11 @@ export const siteConfig = {
     },
     {
       label: "Nossos Bolos",
-      href: "/docs",
+      href: "/bolos",
     },
     {
       label: "Pedir",
-      href: "/pricing",
+      href: "/https://wa.link/9oact3",
     },
     {
       label: "Contato",
