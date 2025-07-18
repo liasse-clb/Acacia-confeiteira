@@ -15,9 +15,7 @@ import { Button } from "@heroui/button";
 
 import InstagramButton, { WhatsAppButton } from "./socialBtn";
 
-import { pattaya } from "@/pages/_app";
 import { siteConfig } from "@/config/site";
-import { inter } from "@/pages/_app";
 
 export const Navbar = () => {
   return (
@@ -63,11 +61,7 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2 text-white">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className={`${inter.className} text-white`}
-                href="#"
-                size="lg"
-              >
+              <Link className="font-inter text-white" href="#" size="lg">
                 {item.label}
               </Link>
             </NavbarMenuItem>
@@ -79,7 +73,7 @@ export const Navbar = () => {
         </div>
         <div>
           <Button
-            className={`${pattaya.className} fixed bottom-0 left-0 w-full bg-slate-800 border-none text-1xl p-4`}
+            className="font-pattaya.className fixed bottom-0 left-0 w-full bg-slate-800 border-none text-1xl p-4"
             variant="bordered"
             onClick={() => (window.location.href = "/auth/login")}
           >

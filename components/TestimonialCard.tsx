@@ -1,4 +1,3 @@
-import { inter } from "@/pages/_app";
 import { BsStarFill } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
 
@@ -20,9 +19,7 @@ export default function TestimonialCard({ name, comment }: TestimonialProps) {
           <BsStarFill key={i} />
         ))}
       </div>
-      <p className={`${inter.className} text-gray-700 italic`}>
-        &quot;{comment}&quot;
-      </p>
+      <p className="font-inter text-gray-700 italic">&quot;{comment}&quot;</p>
     </div>
   );
 }

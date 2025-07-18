@@ -3,7 +3,6 @@ import { Button } from "@heroui/button";
 import { ArrowIcon } from "./icons";
 
 import { siteConfig } from "@/config/site";
-import { pattaya } from "@/pages/_app";
 
 export default function FazerPedido() {
   return (
@@ -29,7 +28,7 @@ export function VerCard() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4`}
+        className="font-pattaya border-[#e9cece] text-2xl text-[#C79f30] p-4"
         variant="bordered"
         onClick={() => (window.location.href = "/bolos")}
       >
@@ -43,7 +42,7 @@ export function VerCard2() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white`}
+        className="font-pattaya bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white"
         variant="shadow"
         onClick={() => (window.location.href = "/bolos")}
       >
@@ -57,7 +56,7 @@ export function Pedir() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} bg-[#C79F30] flex items-center m-auto text-xl p-4 text-white`}
+        className="font-pattaya bg-[#C79F30] flex items-center m-auto text-xl p-4 text-white"
         onClick={() =>
           window.open(
             siteConfig.links.whatsapp,
@@ -77,7 +76,7 @@ export function CakePage() {
   return (
     <div className="m-auto">
       <Button
-        className={`${pattaya.className} text-white w-52 p-6 text-2xl`}
+        className="font-pattaya text-white w-52 p-6 text-2xl"
         color="primary"
         variant="shadow"
         onClick={() =>

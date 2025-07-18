@@ -5,7 +5,6 @@ import { Button, Input, Checkbox, Form } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/navigation";
 
-import { inter } from "@/pages/_app";
 import { supabase } from "@/lib/supabase";
 
 export default function FormLogin() {
@@ -71,7 +70,7 @@ export default function FormLogin() {
 
   return (
     <div
-      className={`${inter.className} flex h-full w-full items-center justify-center`}
+      className="font-inter flex h-full w-full items-center justify-center"
     >
       <div className="flex w-full max-w-sm flex-col gap-4 rounded-large px-8 pb-10 pt-6">
         <p className="pb-4 text-left text-3xl font-semibold">

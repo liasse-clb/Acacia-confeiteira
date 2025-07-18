@@ -2,8 +2,6 @@ import Image from "next/image";
 import { FaMotorcycle } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import { cardo, inter, pattaya } from "./_app";
-
 import Carousel from "@/components/carousel";
 import DefaultLayout from "@/layouts/default";
 import FazerPedido, { Pedir } from "@/components/buttons";
@@ -72,19 +70,13 @@ export default function IndexPage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="flex flex-col text-left space-y-4 max-w-md">
-            <span
-              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-white leading-tight -mb-12`}
-            >
+            <span className="font-pattaya text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-white leading-tight -mb-12">
               Acácia&apos;S
             </span>
-            <span
-              className={`${pattaya.className} text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-[#FFAC04] leading-tight`}
-            >
+            <span className="font-pattaya text-[clamp(4rem,8vw,14rem)] text-center md:text-left text-[#FFAC04] leading-tight">
               Bakery{" "}
             </span>
-            <span
-              className={`${cardo.className} text-[clamp(1rem,2.5vw,1.5rem)] text-center md:text-left text-white italic leading-tight`}
-            >
+            <span className="font-cardo text-[clamp(1rem,2.5vw,1.5rem)] text-center md:text-left text-white italic leading-tight">
               “Onde a arte da confeitaria
               <br />
               encontra o requinte do sabor.”
@@ -131,48 +123,40 @@ export default function IndexPage() {
           </div>
 
           <div className="w-full md:w-1/2 text-center md:text-left px-2">
-            <p
-              className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-[#C79f30] mb-4 leading-none`}
-            >
+            <p className="font-pattaya text-[clamp(1.6rem,5vw,3rem)] text-[#C79f30] mb-4 leading-none">
               Procurando o bolo perfeito que impressione seus convidados?
             </p>
-            <p
-              className={`${inter.className} text-[clamp(1.2rem,2.5vw,1.6rem)] text-white leading-none`}
-            >
+            <p className="font-inter text-[clamp(1.2rem,2.5vw,1.6rem)] text-white leading-none">
               Obras de arte comestíveis que encantam o paladar e a alma.
             </p>
             <br />
-            <p
-              className={`${inter.className} text-[clamp(1.2rem,2.5vw,1.6rem)] text-white mb-8 leading-none`}
-            >
+            <p className="font-inter text-[clamp(1.2rem,2.5vw,1.6rem)] text-white mb-8 leading-none">
               Todos feitos com ingredientes selecionados e de 1° qualidade.
             </p>
             <VerCard />
           </div>
         </div>
       </section>
+
       <section className="w-full px-4 py-10">
-        <div>
-          <Cards />
-        </div>
+        <Cards />
       </section>
+
       <section className="w-full px-4 py-10 m-auto">
         <Cakes />
       </section>
+
       <section className="w-full px-4 py-3 gap-6 m-auto justify-center flex flex-col">
         <Carrossel />
-        <p
-          className={`${pattaya.className} text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none`}
-        >
+        <p className="font-pattaya text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none">
           Fale Conosco Para Um Orçamento Personalizado!
         </p>
         <Pedir />
       </section>
+
       <section className="w-full px-4 py-10 m-auto justify-center flex flex-col flex-wrap">
         <div>
-          <p
-            className={`${pattaya.className} text-[clamp(2.2rem,5vw,3rem)] text-center text-[#C79f30] mb-4 leading-none`}
-          >
+          <p className="font-pattaya text-[clamp(2.2rem,5vw,3rem)] text-center text-[#C79f30] mb-4 leading-none">
             Veja os nossos relatos!
           </p>
         </div>
@@ -181,6 +165,7 @@ export default function IndexPage() {
           <TestimonialList testimonials={testimonials} />
         </div>
       </section>
+
       <section className="w-full px-4 py-10 m-auto">
         <Ebook />
       </section>
