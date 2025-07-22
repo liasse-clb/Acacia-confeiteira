@@ -10,11 +10,18 @@
 }
 
 .carrossel-img {
-  max-width: 14rem; 
-  max-height: 16rem;
+  max-width: 22rem;
+  max-height: 30rem;
   border-radius: 0.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .carrossel-img {
+    max-width: 15rem;
+    max-height: 20rem;
+  }
 }
 
 @keyframes marquee {

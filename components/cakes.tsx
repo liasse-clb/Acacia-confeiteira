@@ -4,37 +4,31 @@ import { Button } from "@heroui/button";
 import { VerCard2 } from "./buttons";
 
 import { siteConfig } from "@/config/site";
-import { pattaya } from "@/pages/_app";
 
 export default function Cakes() {
   return (
     <div>
-      <p
-        className={`${pattaya.className} text-[clamp(2.4rem,7vw,3.5rem)] text-[#C79f30] mb-8 leading-none text-center`}
-      >
+      <p className="font-pattaya text-[clamp(2.4rem,7vw,3.5rem)] text-[#C79f30] mb-8 leading-none text-center">
         Conheça Nossos Bolos
       </p>
 
+      {/* Bolo 1 */}
       <div className="flex flex-col md:flex-row items-start gap-16 pt-10 justify-center">
         <div className="w-full md:w-1/2 max-w-[400px]">
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake1.webp"
+            src="/images/cake1.webp"
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
-          <p
-            className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
-          >
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
+          <p className="font-pattaya text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]">
             Jardim Festivo
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p className="font-inter text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
             Delicadeza e sabor se unem em nosso{" "}
-            <span
-              className={`${pattaya.className} text-[#4867FF] text-lg sm:text-xl md:text-2xl`}
-            >
+            <span className="font-pattaya text-[#4867FF] text-lg sm:text-xl md:text-2xl">
               Jardim Festivo.
             </span>{" "}
             <br />
@@ -44,7 +38,7 @@ export default function Cakes() {
             e ocasiões que pedem um toque de leveza e sofisticação.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className="font-pattaya border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0"
             variant="bordered"
             onClick={() =>
               window.open(
@@ -58,26 +52,24 @@ export default function Cakes() {
           </Button>
         </div>
       </div>
+
+      {/* Bolo 2 */}
       <div className="flex flex-col md:flex-row items-start gap-16 pt-10 justify-center">
         <div className="w-full md:w-1/2 max-w-[400px]">
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake2.webp"
+            src="/images/cake2.webp"
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
-          <p
-            className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
-          >
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
+          <p className="font-pattaya text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]">
             Céu Gradiente
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p className="font-inter text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
             Deixe-se encantar pela beleza artística do nosso{" "}
-            <span
-              className={`${pattaya.className} text-[#62BEFF] text-lg sm:text-xl md:text-2xl`}
-            >
+            <span className="font-pattaya text-[#62BEFF] text-lg sm:text-xl md:text-2xl">
               Aurora Azul.
             </span>{" "}
             <br />
@@ -88,7 +80,7 @@ export default function Cakes() {
             trazem um frescor campestre.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className="font-pattaya border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0"
             variant="bordered"
             onClick={() =>
               window.open(
@@ -102,26 +94,24 @@ export default function Cakes() {
           </Button>
         </div>
       </div>
+
+      {/* Bolo 3 */}
       <div className="flex flex-col md:flex-row items-start gap-16 pt-10 justify-center">
         <div className="w-full md:w-1/2 max-w-[400px]">
           <Image
             alt="Imagem de um bolo"
             height={100}
-            src="/cake3.webp"
+            src="/images/cake3.webp"
             width={400}
           />
         </div>
-        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4">
-          <p
-            className={`${pattaya.className} text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]`}
-          >
+        <div className="w-full md:w-1/2 max-w-[30rem] flex flex-col gap-4 text-center md:text-left">
+          <p className="font-pattaya text-[#C79f30] text-[clamp(2rem,7vw,3.5rem)]">
             Sonho Rosa
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
+          <p className="font-inter text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white">
             Celebre com o charme e a alegria do{" "}
-            <span
-              className={`${pattaya.className} text-[#F28686] text-lg sm:text-xl md:text-2xl`}
-            >
+            <span className="font-pattaya text-[#F28686] text-lg sm:text-xl md:text-2xl">
               Sonho Rosa!
             </span>{" "}
             <br />
@@ -131,7 +121,7 @@ export default function Cakes() {
             laterais e o topo, criando um cenário de pura beleza.
           </p>
           <Button
-            className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52`}
+            className="font-pattaya border-[#e9cece] text-2xl text-[#C79f30] p-4 mt-4 w-52 mx-auto md:mx-0"
             variant="bordered"
             onClick={() =>
               window.open(
@@ -145,10 +135,12 @@ export default function Cakes() {
           </Button>
         </div>
       </div>
+
+      {/* Rodapé */}
       <div className="justify-items-center">
-        <p className=" text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mt-12 mb-6">
+        <p className="font-inter text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mt-12 mb-6">
           Quer mais opções? Ou algo personalizado ? <br /> Descubra a nossa
-          coleção completa de bolos e doces no cardápio!{" "}
+          coleção completa de bolos e doces no cardápio!
         </p>
         <VerCard2 />
       </div>

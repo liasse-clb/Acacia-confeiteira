@@ -1,15 +1,15 @@
 import { Button } from "@heroui/button";
+import Image from "next/image";
 
 import { ArrowIcon } from "./icons";
 
 import { siteConfig } from "@/config/site";
-import { pattaya } from "@/pages/_app";
 
 export default function FazerPedido() {
   return (
     <div>
       <Button
-        className="bg-[#C79F30] flex items-center gap-2 text-xl m-auto px-4 py-2 text-white"
+        className="bg-[#C79F30] flex items-center gap-2 text-xl font-inter m-auto md:m-0 px-4 py-2 text-white"
         onClick={() =>
           window.open(
             siteConfig.links.whatsapp,
@@ -29,7 +29,7 @@ export function VerCard() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} border-[#e9cece] text-2xl text-[#C79f30] p-4`}
+        className="font-pattaya border-[#e9cece] text-2xl text-[#C79f30] p-6 max-w-64"
         variant="bordered"
         onClick={() => (window.location.href = "/bolos")}
       >
@@ -43,7 +43,7 @@ export function VerCard2() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white`}
+        className="font-pattaya bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white"
         variant="shadow"
         onClick={() => (window.location.href = "/bolos")}
       >
@@ -57,7 +57,7 @@ export function Pedir() {
   return (
     <div>
       <Button
-        className={`${pattaya.className} bg-[#C79F30] flex items-center m-auto text-xl p-4 text-white`}
+        className="font-pattaya bg-[#C79F30] flex items-center m-auto text-xl p-4 text-white"
         onClick={() =>
           window.open(
             siteConfig.links.whatsapp,
@@ -77,7 +77,7 @@ export function CakePage() {
   return (
     <div className="m-auto">
       <Button
-        className={`${pattaya.className} text-white w-52 p-6 text-2xl`}
+        className="font-pattaya text-white w-52 p-6 text-2xl"
         color="primary"
         variant="shadow"
         onClick={() =>
@@ -91,5 +91,25 @@ export function CakePage() {
         Saiba Mais
       </Button>
     </div>
+  );
+}
+
+export function IfoodButton() {
+  return (
+    <Button
+      className="bg-[#ff001b] m-auto justify-center font-semibold px-4 py-2 rounded-lg flex items-center gap-3"
+      variant="solid"
+      onClick={() =>
+        window.open(siteConfig.links.ifood, "_blank", "noopener,noreferrer")
+      }
+    >
+      <Image
+        alt="Logo do iFood"
+        className="object-cover"
+        height={44}
+        src="/images/ifood.webp"
+        width={54}
+      />
+    </Button>
   );
 }

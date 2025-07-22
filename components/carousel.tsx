@@ -16,7 +16,7 @@ export default function Carousel({ images }: CarouselProps) {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 8000);
+    }, 34000);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
@@ -38,9 +38,8 @@ export default function Carousel({ images }: CarouselProps) {
   });
 
   return (
-    <div className="relative flex flex-col items-center gap-4 sm:gap-6 w-full max-w-[360px] mx-auto">
-      <div className="relative w-full max-w-[360px] mx-auto flex items-center justify-center">
-        {/* Botão Esquerdo */}
+    <div className="relative flex flex-col items-center gap-4 sm:gap-6 w-full max-w-[600px] mx-auto">
+      <div className="relative w-full max-w-[600px] mx-auto flex items-center justify-center">
         <button
           className="absolute -left-10 md:-left-14 top-1/2 -translate-y-1/2
             text-white rounded-full p-2 md:p-3 shadow-md z-20"
@@ -62,10 +61,9 @@ export default function Carousel({ images }: CarouselProps) {
           </svg>
         </button>
 
-        {/* Slide principal */}
         <div
           {...handlers}
-          className="aspect-square w-full max-w-[350px] rounded-2xl overflow-hidden bg-[#FFAC04] flex items-center justify-center shadow-lg relative"
+          className="aspect-square w-full max-w-[600px] rounded-2xl overflow-hidden flex items-center justify-center shadow-lg relative"
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -79,14 +77,12 @@ export default function Carousel({ images }: CarouselProps) {
               <Image
                 fill
                 alt={`Slide ${currentIndex + 1}`}
-                className="object-contain"
+                className="object-cover"
                 src={images[currentIndex]}
               />
             </motion.div>
           </AnimatePresence>
         </div>
-
-        {/* Botão Direito */}
         <button
           className="absolute -right-10 md:-right-14 top-1/2 -translate-y-1/2
            text-white rounded-full p-2 md:p-3 shadow-md z-20"
