@@ -63,6 +63,8 @@ export const siteConfig = {
     whatsapp4: "https://wa.link/osk5lf",
     instagram:
       "https://www.instagram.com/acaciacakedesigner?igsh=OGwzN2xlN3c1M290",
+    instagramcox: "https://www.instagram.com/aiquecoxinha_official/",
+    instagrampessoal: "https://www.instagram.com/acacia_brandao/",
     ifood:
       "https://www.ifood.com.br/delivery/salvador-ba/ai-que-coxinha-moradas-da-lagoa/928ea079-f0ae-411f-97b2-769e7fb6dd83?UTM_Medium=share",
   },

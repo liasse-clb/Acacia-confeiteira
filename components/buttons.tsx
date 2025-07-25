@@ -44,7 +44,7 @@ export function VerCard2() {
     <div>
       <Button
         className="font-pattaya bg-[#C79F30] flex items-center gap-2 text-xl p-6 text-white"
-        variant="shadow"
+        variant="solid"
         onClick={() => (window.location.href = "/bolos")}
       >
         Veja o Cardápio Completo

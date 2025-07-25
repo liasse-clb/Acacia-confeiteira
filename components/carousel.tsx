@@ -72,7 +72,10 @@ export default function Carousel({ images }: CarouselProps) {
               className="w-full h-full relative"
               exit={{ opacity: 0, scale: 0.95 }}
               initial={{ opacity: 0, scale: 1.05 }}
-              transition={{ duration: 0.5 }}
+              transition={{
+                duration: 0.6,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
             >
               <Image
                 fill

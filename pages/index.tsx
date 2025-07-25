@@ -64,9 +64,9 @@ export default function IndexPage() {
 
   return (
     <DefaultLayout>
-      <section>
+      <section className="w-full">
         {/* Hero Section */}
-        <section className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-20 py-3 md:py-6 px-4">
+        <section className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-20 py-3 md:py-6">
           {/* Texto e botão */}
           <motion.div
             animate={{ opacity: 1, x: 0 }}
@@ -148,7 +148,7 @@ export default function IndexPage() {
           <Cakes />
         </section>
 
-        <section className="w-full px-4 py-3 gap-6 m-auto justify-center flex flex-col">
+        <section className="w-full py-3 gap-6 justify-center flex flex-col">
           <Carrossel />
           <p className="font-pattaya text-[clamp(1.6rem,5vw,3rem)] text-center text-[#C79f30] leading-none">
             Fale Conosco Para Um Orçamento Personalizado!
