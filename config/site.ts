@@ -19,7 +19,7 @@ export const siteConfig = {
     },
     {
       label: "Contato",
-      href: "/blog",
+      href: "/contact",
     },
     {
       label: "Sobre",
@@ -37,7 +37,7 @@ export const siteConfig = {
     },
     {
       label: "Nossos Bolos",
-      href: "/docs",
+      href: "/bolos",
     },
     {
       label: "Pedir",
@@ -45,7 +45,7 @@ export const siteConfig = {
     },
     {
       label: "Contato",
-      href: "/blog",
+      href: "/contact",
     },
     {
       label: "Sobre",

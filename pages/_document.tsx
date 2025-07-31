@@ -5,7 +5,7 @@ import { fontSans } from "@/config/fonts";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt-br">
       <Head>
         <link href="/favicon.ico" rel="icon" />
       </Head>

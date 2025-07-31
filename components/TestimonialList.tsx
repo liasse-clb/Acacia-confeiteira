@@ -25,7 +25,7 @@ export default function TestimonialList({
 
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center gap-6">
         {displayedTestimonials.map((t, idx) => (
           <TestimonialCard key={idx} comment={t.comment} name={t.name} />
         ))}

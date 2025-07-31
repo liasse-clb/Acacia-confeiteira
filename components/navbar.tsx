@@ -14,6 +14,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import InstagramButton, { IfoodLink, WhatsAppButton } from "./socialBtn";
+
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {

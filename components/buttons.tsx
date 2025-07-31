@@ -113,3 +113,18 @@ export function IfoodButton() {
     </Button>
   );
 }
+
+export function BackButton() {
+  return (
+    <div className="m-auto">
+      <Button
+        className="font-inter text-white w-64 p-6 text-xl"
+        color="primary"
+        variant="shadow"
+        onClick={() => window.open("/")}
+      >
+        Voltar para página inicial
+      </Button>
+    </div>
+  );
+}
