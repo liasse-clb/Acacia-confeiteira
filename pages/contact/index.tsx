@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaMailBulk, FaPhone, FaClock } from "react-icons/fa";
+import { FaMailBulk, FaPhone } from "react-icons/fa";
 
 import InstagramButton, {
   IfoodLink,
