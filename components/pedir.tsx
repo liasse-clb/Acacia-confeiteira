@@ -11,6 +11,10 @@ const imagens = [
   "/images/cake8.webp",
   "/images/cake9.webp",
   "/images/cake10.webp",
+  "/images/cake11.webp",
+  "/images/cake12.webp",
+  "/images/cake13.webp",
+  "/images/cake14.webp",
 ];
 
 export default function Carrossel() {
